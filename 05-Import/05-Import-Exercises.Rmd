@@ -26,7 +26,7 @@ readRenviron(".renviron") # Remove the string if you are using your global profi
 driver <- "{ODBC Driver 17 for SQL Server}" # Set your Driver Name based off of the Name in ODBC Data Sources
 
 # DB Connection String
-con <- dbConnect(odbc::odbc(), driver = driver, server = "DEVSQL17\\CountyStat_DW", database = "HealthCare_DataWarehouse", UID = Sys.getenv("uid"), pwd = Sys.getenv("pwd"), Trusted_Connection= "yes")
+con <- dbConnect(odbc::odbc(), driver = driver, server = "SQLDEVV2", database = "HealthCare_DataWarehouse", Trusted_Connection= "yes")
 ```
 
 # Build a SQL Query and load it
